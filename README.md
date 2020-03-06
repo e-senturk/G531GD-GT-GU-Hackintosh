@@ -32,7 +32,7 @@ section and set windows boot file location. Disable hideself in misc.
 Easy fix: Just select reset NVRam option in opencore
 
 - Q-) I am getting kernel panic it says ionvme error what can I do?
-- A-) Your nvme ssd is most likely not supported by apple you need to replace it or buy a sata ssd and enable SSDT_NVMe-Pcc.amlin config.plist
+- A-) Your nvme ssd is most likely not supported by apple you need to replace it or buy a sata ssd and enable SSDT_NVMe-Pcc.aml in config.plist
 
 - Q-) I have bug kp error what can I do? 
 - A-) Attach a debug and detailed information about bug. Without information I can't fix
