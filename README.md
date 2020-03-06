@@ -2,7 +2,7 @@
 OpenCore Build for G531-GT
 
 V 1.0 Changelog:
---Working Sound(thanks to @ayatkyo for pinconfig)
+--Working Sound(thanks to @ayatkyo for pinconfig)\n
 --Working Trackpad(thanks to @serdeliuk)
 --Working Intel UHD 630
 --Working Sleep Wake Lid Close
