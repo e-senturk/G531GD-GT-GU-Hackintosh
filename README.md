@@ -12,9 +12,10 @@ OpenCore Build for G531-GT
 - Fixed Most Common Bugs(Power management etc.)
 
 ## Bugs:
-- Trackpad Buttons not working.
+- Trackpad Buttons not working. (Kext needs to update)
+- Broken HDMI (Trying to fix)
 - AsusSMC is not working in Catalina its a common bug. You cant use most fn keys and set backlight brightness. In keyboard
-settings you can set fnbrightness keys for screen.
+settings you can set fnbrightness keys for screen. It has to work with mojave didn't tested.
 - Numberpad is not working (Probably it never will)
 - You tell me.
 
