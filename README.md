@@ -20,6 +20,7 @@ settings you can set fnbrightness keys for screen.
 
 ## Installation:
 - First read opencore installation docs for more info (https://github.com/acidanthera/OpenCorePkg). 
+- Edit your device info (you might want to use OpenCore Configurator).
 - If you want to install it only single drive install osx first then windows after all installation complete.
 Copy efi folder to your drive and replace boot folder. Move windows folder into OC folder. Then use bless override
 section and set windows boot file location. Disable hideself in misc.
