@@ -17,6 +17,7 @@ OpenCore Build for G531-GT
 - AsusSMC is not working in Catalina its a common bug. You cant use most fn keys and set backlight brightness. In keyboard
 settings you can set fnbrightness keys for screen. It has to work with mojave didn't tested.
 - Numberpad is not working (Probably it never will)
+- In windows aroura lightning is not working with enabling mac smbios if we disable smbios mac installer is broken.
 - You tell me.
 
 ## Installation:
@@ -26,9 +27,8 @@ settings you can set fnbrightness keys for screen. It has to work with mojave di
 Copy efi folder to your drive and replace boot folder. Move windows folder into OC folder. Then use bless override
 section and set windows boot file location. Disable hideself in misc.
 - If you have two seperate drives install with oses in any order.Copy Efi folder into OSX drive. And enable hideself in misc.
-- If trackpad or sound is not working rebuild cache with
-#### sudo kextcache -i /
-command
+- If trackpad or sound is not working rebuild cache with  sudo kextcache -i / command.
+
 
 
 ## Q.A:
@@ -42,6 +42,9 @@ Easy fix: Just select reset NVRam option in opencore
 - Q-) I have bug kp error what can I do? 
 - A-) Attach a debug and detailed information about bug. Without information I can't fix
 anything.
+
+- Q-) In windows my aroura lightning is not working? 
+- A-) Disable SMBIOS in platform info "Disable SMBIOS by chaning true to false". Don't reinstall or update mac without reneabling it.
 
 
 
