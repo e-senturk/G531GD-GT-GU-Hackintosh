@@ -898,7 +898,7 @@
 		<key>UpdateNVRAM</key>
 		<true/>
 		<key>UpdateSMBIOS</key>
-		<false/>
+		<true/>
 		<key>UpdateSMBIOSMode</key>
 		<string>Create</string>
 	</dict>
