@@ -25,7 +25,10 @@ settings you can set fnbrightness keys for screen. It has to work with mojave di
 - If you want to install it only single drive install osx first then windows after all installation complete.
 Copy efi folder to your drive and replace boot folder. Move windows folder into OC folder. Then use bless override
 section and set windows boot file location. Disable hideself in misc.
-- If you have two seperate drives install with oses in any order.Copy Efi folder into OSX drive.And enable hideself in misc.
+- If you have two seperate drives install with oses in any order.Copy Efi folder into OSX drive. And enable hideself in misc.
+- If trackpad or sound is not working rebuild cache with
+#### sudo kextcache -i /
+command
 
 
 ## Q.A:
