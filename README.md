@@ -1,6 +1,12 @@
 # G531GT-Hackintosh
 OpenCore Build for G531-GT
 
+## V 1.1 Changelog:
+- Removed Unnecessary SSDT(Windows Patch And GRPW) now There are no modifications on DSDT.
+- Switched modded OC(For GUI and Windows Armoury Create Support)
+- Build Ported to Clover
+- Audio Glitch is Fixed
+
 ## V 1.0 Changelog:
 - Working Sound(thanks to @ayatkyo for pinconfig)
 - Working Trackpad(thanks to @serdeliuk)
