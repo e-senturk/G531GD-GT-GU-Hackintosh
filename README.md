@@ -1,32 +1,30 @@
 # G531GT-Hackintosh
-OpenCore Build for G531-GT
+- G531-GT Hackintosh Build
+# Please don't forget to type in terminal: sudo kextcache -i / command after installation. 
 
-## V 1.1 Changelog:
-- Removed Unnecessary SSDT(Windows Patch And GRPW) now There are no modifications on DSDT.
-- Switched modded OC(For GUI and Windows Armoury Create Support)
-- Build Ported to Clover
-- Audio Glitch is Fixed
-
-## V 1.0 Changelog:
+## Changelog:
+- OpenCore and Clover configuration
 - Working Sound(thanks to @ayatkyo for pinconfig)
 - Working Trackpad(thanks to @serdeliuk)
 - Working Intel UHD 630
 - Working Sleep Wake Lid Close
-- Support's DualBoot
-- Replaced WifiCard and Bluetooth Support (DW1560)
-- Fixed Unsupported NVME SSD( Can be enabled manually)
-- Fixed Most Common Bugs(Power management etc.)
+- Support's DualBoot in OpenCore and Clover
+- Can be disabled unsupported NVME SSD - Micron 2200V:(https://github.com/acidanthera/bugtracker/issues/732)
 
 ## Bugs:
-- Trackpad Buttons not working. (Kext needs to update)
-- Broken HDMI (Trying to fix)
+- No Nvidia 1650 and No HDMI (Can't be fixed)
+- Trackpad Buttons not working. (No fix for that yet)
+- No support for Intel Wi-Fi. For now need to replace WifiCard DW1820A isrecommended.
 - AsusSMC is not working in Catalina its a common bug. You cant use most fn keys and set backlight brightness. In keyboard
 settings you can set fnbrightness keys for screen. It has to work with mojave didn't tested.
 - Numberpad is not working (Probably it never will)
-- In windows aroura lightning is not working with enabling mac smbios if we disable smbios mac installer is broken.
 - You tell me.
 
 ## Installation:
+Clover
+-  Just use clover folder on release.
+
+OpenCore
 - First read opencore installation docs for more info (https://github.com/acidanthera/OpenCorePkg). 
 - Edit your device info (you might want to use OpenCore Configurator).
 - If you want to install it only single drive install osx first then windows after all installation complete.
@@ -35,12 +33,10 @@ section and set windows boot file location. Disable hideself in misc.
 - If you have two seperate drives install with oses in any order.Copy Efi folder into OSX drive. And enable hideself in misc.
 - If trackpad or sound is not working rebuild cache with  sudo kextcache -i / command.
 
-
-
 ## Q.A:
 - Q-) My bios left on black screen what can I do? 
 - A-) It's common bug after catalina for avoiding disable fast bios and use opencore for booting. 
-Easy fix: Just select reset NVRam option in opencore
+Easy fix: Just select reset NVRam option in opencore and use clover instead.
 
 - Q-) I am getting kernel panic it says ionvme error what can I do?
 - A-) Your nvme ssd is most likely not supported by apple you need to replace it or buy a sata ssd and enable SSDT_NVMe-Pcc.aml in config.plist
@@ -48,9 +44,6 @@ Easy fix: Just select reset NVRam option in opencore
 - Q-) I have bug kp error what can I do? 
 - A-) Attach a debug and detailed information about bug. Without information I can't fix
 anything.
-
-- Q-) In windows my aroura lightning is not working? 
-- A-) Disable SMBIOS in platform info "Disable SMBIOS by chaning true to false". Don't reinstall or update mac without reneabling it.
 
 
 
