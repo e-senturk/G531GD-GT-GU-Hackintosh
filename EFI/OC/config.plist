@@ -192,7 +192,7 @@
 				<key>device_type</key>
 				<string>USB controller</string>
 				<key>model</key>
-				<string>Cannon Lake PCH USB 3.1 xHCI Host Controller</string>
+				<string>Coffee Lake PCH USB 3.1 xHCI Host Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
@@ -275,7 +275,7 @@
 				<key>device_type</key>
 				<string>SMBus</string>
 				<key>model</key>
-				<string>Cannon Lake PCH SMBus Controller</string>
+				<string>Coffee Lake PCH SMBus Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
@@ -597,6 +597,22 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/VoodooI2CHID</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>VoodooInput.kext</string>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/VoodooInput</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
