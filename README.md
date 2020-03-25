@@ -1,8 +1,8 @@
 # G531GT-Hackintosh
 - G531-GT Hackintosh Build
 # Please don't forget to type in terminal: sudo kextcache -i / command after installation. 
-
-## Changelog:
+# Please don't forget to disable boot logo sound otherwise your speaker won't work.
+## Working:
 - OpenCore and Clover configuration
 - Working Sound(thanks to @ayatkyo for pinconfig)
 - Working Trackpad(thanks to @serdeliuk)
@@ -22,7 +22,9 @@ settings you can set fnbrightness keys for screen. It has to work with mojave di
 
 ## Installation:
 Clover
--  Just use clover folder on release.
+- Use clover folder on release.
+- Edit your device info (you might want to use Clover Configurator).
+
 
 OpenCore
 - First read opencore installation docs for more info (https://github.com/acidanthera/OpenCorePkg). 
@@ -37,6 +39,9 @@ section and set windows boot file location. Disable hideself in misc.
 - Q-) My bios left on black screen what can I do? 
 - A-) It's common bug after catalina for avoiding disable fast bios and use opencore for booting. 
 Easy fix: Just select reset NVRam option in opencore and use clover instead.
+
+- Q-) My speaker is not working  what can I do? 
+- A-) Please don't forget to disable boot logo sound otherwise your speaker won't work.
 
 - Q-) I am getting kernel panic it says ionvme error what can I do?
 - A-) Your nvme ssd is most likely not supported by apple you need to replace it or buy a sata ssd and enable SSDT_NVMe-Pcc.aml in config.plist
