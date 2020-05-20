@@ -5,7 +5,7 @@
 	<key>ACPI</key>
 	<dict>
 		<key>AutoMerge</key>
-		<true/>
+		<false/>
 		<key>Comment-DisabledAML</key>
 		<string>Disable other forms of CPU PM due to SSDT/Generate/PluginType=true</string>
 		<key>DSDT</key>
@@ -16,6 +16,8 @@
 			<dict>
 				<key>Comment-IRQ Fix</key>
 				<string>The following fixes may be needed for onboard audio/USB/etc</string>
+				<key>FixAirport</key>
+				<false/>
 				<key>FixHPET</key>
 				<false/>
 				<key>FixIPIC</key>
@@ -27,7 +29,7 @@
 			</dict>
 		</dict>
 		<key>FixHeaders</key>
-		<true/>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -35,7 +37,7 @@
 			<key>Generate</key>
 			<dict>
 				<key>PluginType</key>
-				<true/>
+				<false/>
 			</dict>
 			<key>NoOemTableId</key>
 			<false/>
@@ -46,9 +48,9 @@
 		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Arguments</key>
-		<string>keepsyms=1 debug=0x100 -wegnoegpu alcid=28</string>
+		<string>keepsyms=1 debug=0x100 -wegnoegpu alcid=28 -igfxnohdmi</string>
 		<key>NeverHibernate</key>
-		<true/>
+		<false/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
@@ -58,105 +60,6 @@
 	<string>This file is for 10.14.x with native CoffeeLake support</string>
 	<key>Devices</key>
 	<dict>
-		<key>AddProperties</key>
-		<array>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "name" as (data)"#display" to disable graphics drivers on NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>I2Rpc3BsYXkA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "IOName" as "#display" to disable graphics drivers on NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for NVidia</string>
-				<key>Device</key>
-				<string>NVidia</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>/////w==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "name" as (data)"#display" to disable graphics drivers on AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>name</string>
-				<key>Value</key>
-				<data>I2Rpc3BsYXkA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject "IOName" as "#display" to disable graphics drivers on AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>IOName</string>
-				<key>Value</key>
-				<string>#display</string>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus class-code to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>class-code</string>
-				<key>Value</key>
-				<data>/////w==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus vendor-id to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>vendor-id</string>
-				<key>Value</key>
-				<data>//8AAA==</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Inject bogus device-id to prevent graphics drivers loading for AMD</string>
-				<key>Device</key>
-				<string>ATI</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Key</key>
-				<string>device-id</string>
-				<key>Value</key>
-				<data>//8AAA==</data>
-			</dict>
-		</array>
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
@@ -169,77 +72,10 @@
 			<key>#Kaby Lake-Comment</key>
 			<string>To avoid automatic Clover fake device-id (Skylake) injection</string>
 		</dict>
+		<key>LANInjection</key>
+		<false/>
 		<key>Properties</key>
 		<dict>
-			<key>PciRoot(0)/Pci(0x02,0)</key>
-			<dict>
-				<key># DVMT-prealloc</key>
-				<string>32MB BIOS, 19MB framebuffer, 9MB cursor bytes (credit RehabMan)</string>
-				<key># Note1</key>
-				<string> no HDMI example in CoffeeLake, flags 86090000 seen in CannonLake?</string>
-				<key>## @0 LVDS-&gt;DP</key>
-				<string></string>
-				<key>## @1 HDMI</key>
-				<string></string>
-				<key>## @2 HDMI</key>
-				<string></string>
-				<key>## @3 HDMI</key>
-				<string></string>
-				<key>#2 0204-&gt;0306</key>
-				<string>0x3e9b0000, 0306 instead of 0204, HDMI</string>
-				<key>#2 framebuffer-con2-alldata</key>
-				<data>AwYIAAAEAADHAwAA</data>
-				<key>#2 framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>#3 framebuffer-con1-alldata</key>
-				<data>/wAAAAEAAAAgAAAA/wAAAAEAAAAgAAAA</data>
-				<key>#3 framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>#3 no external</key>
-				<string>0x3e9b0000, eliminate all external ports (0105 and 0204)</string>
-				<key>#AAPL00,override-no-connect</key>
-				<data></data>
-				<key>#AAPL00,override-no-edid</key>
-				<data></data>
-				<key>#framebuffer-con0-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con0-type</key>
-				<data>AAQAAA==</data>
-				<key>#framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con1-flags</key>
-				<data>hwEAAA==</data>
-				<key>#framebuffer-con1-pipe</key>
-				<data>EgAAAA==</data>
-				<key>#framebuffer-con1-type</key>
-				<data>AAgAAA==</data>
-				<key>#framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con2-flags</key>
-				<data>hwEAAA==</data>
-				<key>#framebuffer-con2-pipe</key>
-				<data>EgAAAA==</data>
-				<key>#framebuffer-con2-type</key>
-				<data>AAgAAA==</data>
-				<key>#framebuffer-con3-enable</key>
-				<integer>1</integer>
-				<key>#framebuffer-con3-flags</key>
-				<data>hwEAAA==</data>
-				<key>#framebuffer-con3-pipe</key>
-				<data>EgAAAA==</data>
-				<key>#framebuffer-con3-type</key>
-				<data>AAgAAA==</data>
-				<key>#hda-gfx</key>
-				<string>onboard-1</string>
-				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
-				<key>framebuffer-fbmem</key>
-				<data>AACQAA==</data>
-				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-stolenmem</key>
-				<data>AAAwAQ==</data>
-			</dict>
 			<key>PciRoot(0x0)/Pci(0x14,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
@@ -247,7 +83,7 @@
 				<key>device_type</key>
 				<string>USB controller</string>
 				<key>model</key>
-				<string>Coffee Lake PCH USB 3.1 xHCI Host Controller</string>
+				<string>Cannon Lake PCH USB 3.1 xHCI Host Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
@@ -256,7 +92,7 @@
 				<key>device_type</key>
 				<string>Serial bus controller</string>
 				<key>model</key>
-				<string>Coffee Lake I2C Controller #0</string>
+				<string>Cannon Lake PCH Serial IO I2C Controller #0</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x1)</key>
 			<dict>
@@ -265,7 +101,7 @@
 				<key>device_type</key>
 				<string>Serial bus controller</string>
 				<key>model</key>
-				<string>Coffee Lake I2C Controller #1</string>
+				<string>Cannon Lake PCH Serial IO I2C Controller #1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
@@ -274,7 +110,7 @@
 				<key>device_type</key>
 				<string>Communication controller</string>
 				<key>model</key>
-				<string>Coffee Lake PCH HECI Controller</string>
+				<string>Cannon Lake PCH HECI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
@@ -283,14 +119,7 @@
 				<key>device_type</key>
 				<string>SATA controller</string>
 				<key>model</key>
-				<string>Coffee Lake Mobile PCH SATA AHCI Controller</string>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,29,0/0,0</string>
-				<key>device_type</key>
-				<string>Non-Volatile Memory Controller</string>
+				<string>Cannon Lake Mobile PCH SATA AHCI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x6)/Pci(0x0,0x0)</key>
 			<dict>
@@ -304,11 +133,17 @@
 			<key>PciRoot(0x0)/Pci(0x1D,0x7)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>Internal@0,29,7/0,0</string>
+				<string>WLAN</string>
+				<key>compatible</key>
+				<string>pci14e4,4331</string>
 				<key>device_type</key>
-				<string>Network controller</string>
+				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>BCM4352 802.11ac Wireless Network Adapter</string>
+				<string>BCM4350 802.11ac Wireless Network Adapter</string>
+				<key>name</key>
+				<string>Airport</string>
+				<key>pci-aspm-default</key>
+				<integer>0</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -319,7 +154,7 @@
 				<key>layout-id</key>
 				<data>HAAAAA==</data>
 				<key>model</key>
-				<string>Intel Coffee Lake HD Audio</string>
+				<string>Cannon Lake PCH cAVS</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
 			<dict>
@@ -328,17 +163,30 @@
 				<key>device_type</key>
 				<string>SMBus</string>
 				<key>model</key>
-				<string>Coffee Lake PCH SMBus Controller</string>
+				<string>Cannon Lake PCH SMBus Controller</string>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
+			<dict>
+				<key>AAPL,ig-platform-id</key>
+				<data>AACbPg==</data>
+				<key>AAPL,slot-name</key>
+				<string>Internal@0,2,0</string>
+				<key>device_type</key>
+				<string>VGA compatible controller</string>
+				<key>disable-external-gpu</key>
+				<data>AQAAAA==</data>
+				<key>model</key>
+				<string>Intel UHD Graphics 630 (Mobile)</string>
 			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
 			<key>AddClockID</key>
-			<true/>
+			<false/>
 			<key>FixOwnership</key>
-			<true/>
+			<false/>
 			<key>Inject</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>UseIntelHDMI</key>
 		<false/>
@@ -366,7 +214,7 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<false/>
+			<true/>
 			<key>Tool</key>
 			<true/>
 		</dict>
@@ -387,11 +235,11 @@
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
-			<true/>
+			<false/>
 			<key>Intel</key>
 			<false/>
 			<key>NVidia</key>
-			<true/>
+			<false/>
 		</dict>
 	</dict>
 	<key>KernelAndKextPatches</key>
