@@ -22,8 +22,14 @@ settings you can set fnbrightness keys for screen. It has to work with mojave di
 
 ## Installation:
 Clover
-- Use clover folder on release.
-- Edit your device info (you might want to use Clover Configurator).
+- Download latest release in my repo Link
+- Download clover configurator open and and mount your efi drive. Backup all files in it in case you fail.
+- In efi drive there is a efi folder under that folder copy BOOT and CLOVER folders(From release). Delete older boot or clover folders before you copy.
+- In BOOT folder rename cloverx64.efi to bootx64.efi and delete original bootx64.efi
+- In CLOVER folder open config.plist with clover configurator.
+- Under Boot section delete -v if you want. And under SMBIOS settings recreate smbios values. In down right there is a tiny icon you can select any SMBIOS equal or higher than MacbookPro 15.1.
+- For disabling Micron SSD for mac. copy EFI/OC/ACPI/SSDT_NVMe-Pcc.aml to EFI/CLOVER/ACPI/patched folder. With that file you can boot mac without issue and also you can install windows that drive.
+- Save file and restart.
 
 
 OpenCore
