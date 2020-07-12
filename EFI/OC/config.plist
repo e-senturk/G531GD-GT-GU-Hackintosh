@@ -1057,7 +1057,7 @@
 			<key>SystemSerialNumber</key>
 			<string>C02000000000</string>
 			<key>SystemUUID</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>889B2D02-83D3-4BE4-942D-C574353993DC</string>
 		</dict>
 		<key>Generic</key>
 		<dict>
@@ -1074,7 +1074,7 @@
 			<key>SystemSerialNumber</key>
 			<string>C02000000000</string>
 			<key>SystemUUID</key>
-			<string>00000000-0000-0000-0000-000000000000</string>
+			<string>889B2D02-83D3-4BE4-942D-C574353993DC</string>
 		</dict>
 		<key>PlatformNVRAM</key>
 		<dict>
