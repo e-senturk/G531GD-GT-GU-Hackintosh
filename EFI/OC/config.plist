@@ -10,7 +10,7 @@
 				<key>Comment</key>
 				<string>NVME Disabler</string>
 				<key>Enabled</key>
-				<true/>
+				<false/>
 				<key>Path</key>
 				<string>SSDT_NVMe-Pcc.aml</string>
 			</dict>
