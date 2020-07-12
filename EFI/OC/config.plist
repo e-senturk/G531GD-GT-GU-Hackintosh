@@ -190,7 +190,7 @@
 			<key>SignalAppleOS</key>
 			<false/>
 			<key>SyncRuntimePermissions</key>
-			<false/>
+			<true/>
 		</dict>
 	</dict>
 	<key>DeviceProperties</key>
@@ -356,7 +356,7 @@
 				<key>Comment</key>
 				<string>Wifi Driver</string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AirportBrcmFixup</string>
 				<key>MaxKernel</key>
@@ -628,7 +628,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string></string>
 				<key>MaxKernel</key>
@@ -644,7 +644,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmFirmwareData</string>
 				<key>MaxKernel</key>
@@ -660,7 +660,7 @@
 				<key>Comment</key>
 				<string></string>
 				<key>Enabled</key>
-				<false/>
+				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/BrcmPatchRAM3</string>
 				<key>MaxKernel</key>
@@ -889,13 +889,13 @@
 				<key>Name</key>
 				<string>Windows 10</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,FC-B4-86-24-01-75-A0-00)/HD(2,GPT,C411D3FE-554E-4830-A940-715FD017A6B4,0x109000,0x32000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
+				<string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x00,0xFFFF,0x0)/HD(2,GPT,62AAEB6D-11F7-4453-9730-715FD017A6B4,0x109000,0x32000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
 				<string></string>
 				<key>Auxiliary</key>
-				<true/>
+				<false/>
 				<key>Comment</key>
 				<string>Not signed for security reasons</string>
 				<key>Enabled</key>
@@ -903,7 +903,21 @@
 				<key>Name</key>
 				<string>Linux</string>
 				<key>Path</key>
-				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,FC-B4-86-24-01-75-A0-00)/HD(2,GPT,C411D3FE-554E-4830-A940-715FD017A6B4,0x109000,0x32000)/\EFI\ubuntu\grubx64.efi</string>
+				<string>PciRoot(0x0)/Pci(0x17,0x0)/Sata(0x00,0xFFFF,0x0)/HD(1,GPT,4D60ABDB-14D4-4A74-92E6-C8A4884BD8A9,0x28,0x64000)/\EFI\ubuntu\grubx64.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<false/>
+				<key>Comment</key>
+				<string></string>
+				<key>Enabled</key>
+				<false/>
+				<key>Name</key>
+				<string>Linux M2 Sata</string>
+				<key>Path</key>
+				<string>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)/NVMe(0x1,FC-B4-86-24-01-75-A0-00)/HD(2,GPT,62AAEB6D-11F7-4453-9730-715FD017A6B4,0x109000,0x32000)/\EFI\Microsoft\Boot\bootmgfw.efi</string>
 			</dict>
 		</array>
 		<key>Security</key>
@@ -931,20 +945,6 @@
 		<array>
 			<dict>
 				<key>Arguments</key>
-				<string></string>
-				<key>Auxiliary</key>
-				<true/>
-				<key>Comment</key>
-				<string>OpenCore Shell</string>
-				<key>Enabled</key>
-				<false/>
-				<key>Name</key>
-				<string>OpenCore Shell</string>
-				<key>Path</key>
-				<string>Shell.efi</string>
-			</dict>
-			<dict>
-				<key>Arguments</key>
 				<string>reboot</string>
 				<key>Auxiliary</key>
 				<true/>
@@ -956,6 +956,20 @@
 				<string>VirtualBiosMod</string>
 				<key>Path</key>
 				<string>VirtualBiosMod.efi</string>
+			</dict>
+			<dict>
+				<key>Arguments</key>
+				<string></string>
+				<key>Auxiliary</key>
+				<true/>
+				<key>Comment</key>
+				<string>OpenCore Shell</string>
+				<key>Enabled</key>
+				<true/>
+				<key>Name</key>
+				<string>OpenCore Shell</string>
+				<key>Path</key>
+				<string>Shell.efi</string>
 			</dict>
 			<dict>
 				<key>Arguments</key>
@@ -987,7 +1001,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-wegnoegpu alcid=28</string>
+				<string>-wegnoegpu</string>
 				<key>prev-lang:kbd</key>
 				<data>dHItVFI6LTM2</data>
 				<key>csr-active-config</key>
