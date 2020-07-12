@@ -12,9 +12,9 @@
 - Can be disabled unsupported NVME SSD - Micron 2200V:(https://github.com/acidanthera/bugtracker/issues/732)
 
 ## Bugs:
-- No Nvidia 1650 and No HDMI (Can't be fixed)
-- Trackpad Buttons not working. (No fix for that yet)
-- No support for Intel Wi-Fi. For now need to replace WifiCard DW1820A isrecommended.
+- No Nvidia 1650 and No HDMI (Can't be fixed) Can be disabled and re-enabled with VirtualBiosMods(thanks to @serdeliuk)
+- Trackpad Buttons not working properly works only when you touch trackpad touch area. (No fix for that yet)
+- No support for Intel Wi-Fi. For now need to replace WifiCard DW1820A is recommended.
 - AsusSMC is not working in Catalina its a common bug. You cant use most fn keys and set backlight brightness. In keyboard
 settings you can set fnbrightness keys for screen. It has to work with mojave didn't tested.
 - Numberpad is not working (Probably it never will)
@@ -44,7 +44,7 @@ section and set windows boot file location. Disable hideself in misc.
 ## Q.A:
 - Q-) My bios left on black screen what can I do? 
 - A-) It's common bug after catalina for avoiding disable fast bios and use opencore for booting. 
-Easy fix: Just select reset NVRam option in opencore and use clover instead.
+Easy fix: Just select reset NVRAM option in opencore.
 
 - Q-) My speaker is not working  what can I do? 
 - A-) Please don't forget to disable boot logo sound otherwise your speaker won't work.
