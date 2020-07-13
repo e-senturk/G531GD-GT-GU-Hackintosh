@@ -1001,9 +1001,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-wegnoegpu</string>
-				<key>prev-lang:kbd</key>
-				<data>dHItVFI6LTM2</data>
+				<string>-wegnoegpu -igfxnohdmi disable-hdmi-patches</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 			</dict>
@@ -1134,9 +1132,11 @@
 		<true/>
 		<key>Drivers</key>
 		<array>
+			<string>ApfsDriverLoader.efi</string>
+			<string>HfsPlus.efi</string>
+			<string>NvmExpressDxe.efi</string>
 			<string>OpenCanopy.efi</string>
 			<string>HiiDatabase.efi</string>
-			<string>NvmExpressDxe.efi</string>
 			<string>OpenRuntime.efi</string>
 			<string>XhciDxe.efi</string>
 		</array>
