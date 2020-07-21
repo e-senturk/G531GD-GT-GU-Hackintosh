@@ -1,7 +1,9 @@
 # G531GT-Hackintosh
-- G531-GT Hackintosh Build
-# Please don't forget to type in terminal: sudo kextcache -i / command after installation. 
-# Please don't forget to disable boot logo sound otherwise your speaker won't work.
+# Important Notes
+## Please don't forget to type in terminal: sudo kextcache -i / command after installation. 
+## Please don't forget to disable boot logo sound otherwise your speaker won't work.
+## Please edit your PlatformInfo configuration with OpenCoreConfigurator or SmBios configuration with CloverConfigurator.
+
 ## Working:
 - OpenCore and Clover configuration
 - Working Sound(thanks to @ayatkyo for pinconfig)
@@ -21,7 +23,7 @@ settings you can set fnbrightness keys for screen. It has to work with mojave di
 - You tell me.
 
 ## Installation:
-OPENCORE
+### OPENCORE
 - First read opencore installation docs for more info (https://github.com/acidanthera/OpenCorePkg). 
 - Edit your device SMBIOS info as MacbookPro 15.1 with your own values.(You might want to use OpenCore Configurator).
 - If you want to install it only single drive install OS X first then Windows after all installation complete.
@@ -30,8 +32,13 @@ section and set windows boot file location. Disable hideself in misc.
 - If you have two seperate drives install with oses in any order.Copy Efi folder into OSX drive. And enable hideself in misc.
 - If trackpad or sound is not working rebuild cache with  sudo kextcache -i / command.
 
+#### Installing Linux on OPENCORE
+- On Opencore boot press space and open OpenCore Shell
+- Find your EFI drive among these drives in the list and take a picture of its information.
+- Enable Linux in Misc Entries. You can rename it.
+- You need to edit path as your EFI drive it is a long text but you need to type it correctly. There are two examples in build one for M2 sata drive one for Sata SSD. If you write it correctly then opencore has to boot linux.
 
-CLOVER
+### CLOVER
 - Download latest release in my repo Link
 - Download clover configurator open and and mount your efi drive. Backup all files in it in case you fail.
 - In efi drive there is a efi folder under that folder copy BOOT and CLOVER folders(From release). Delete older boot or clover folders before you copy.
@@ -40,14 +47,6 @@ CLOVER
 - Under Boot section delete -v if you want. And under SMBIOS settings recreate smbios values. In down right there is a tiny icon you can select SMBIOS MacbookPro 15.1.
 - For disabling Micron SSD for mac. copy EFI/OC/ACPI/SSDT_NVMe-Pcc.aml to EFI/CLOVER/ACPI/patched folder. With that file you can boot mac without issue and also you can install windows that drive.
 - Save file and restart.
-
-
-Installing Linux on OPENCORE
-- On Opencore boot press space and open OpenCore Shell
-- Find your EFI drive among these drives in the list and take a picture of its information.
-- Enable Linux in Misc Entries. You can rename it.
-- You need to edit path as your EFI drive it is a long text but you need to type it correctly. There are two examples in build one for M2 sata drive one for Sata SSD. If you write it correctly then opencore has to boot linux.
-
 
 
 ## Q.A:
