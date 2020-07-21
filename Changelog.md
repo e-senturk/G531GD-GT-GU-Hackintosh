@@ -2,7 +2,7 @@ G531GT -Hackintosh Opencore-Clover
 ====================
 #### v1.6.0
 - Initial BigSur support (Only with OpenCore)
-- In BigSur everything works except wifi (DW1820A)
+- All kexts are compatible with BigSur
 
 #### v1.5.0
 - Updated OpenCore and returned back to original for from acidanthera
