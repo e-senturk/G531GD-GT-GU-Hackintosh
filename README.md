@@ -15,7 +15,7 @@
     https://github.com/serdeliuk/macAura
 
 ## Working:
-- Supports Mojave, Catalina and BigSur (Only with clover)
+- Supports Mojave, Catalina and BigSur (Beta versions only supports OpenCore)
 - OpenCore and Clover configuration
 - Supports both Intel 9560 wifi and Broadcom DW1820A wifi cards
 - Working Sound(thanks to @ayatkyo for pinconfig)
