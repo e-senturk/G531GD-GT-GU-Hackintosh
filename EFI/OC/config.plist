@@ -206,7 +206,7 @@
 				<key>device_type</key>
 				<string>USB controller</string>
 				<key>model</key>
-				<string>Cannon Lake PCH USB 3.1 xHCI Host Controller</string>
+				<string>Coffee Lake USB 3.1 xHCI Host Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x0)</key>
 			<dict>
@@ -215,7 +215,7 @@
 				<key>device_type</key>
 				<string>Serial bus controller</string>
 				<key>model</key>
-				<string>Cannon Lake PCH Serial IO I2C Controller #0</string>
+				<string>Coffee Lake I2C Controller #0</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x15,0x1)</key>
 			<dict>
@@ -224,7 +224,7 @@
 				<key>device_type</key>
 				<string>Serial bus controller</string>
 				<key>model</key>
-				<string>Cannon Lake PCH Serial IO I2C Controller #1</string>
+				<string>Coffee Lake I2C Controller #1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x16,0x0)</key>
 			<dict>
@@ -233,7 +233,7 @@
 				<key>device_type</key>
 				<string>Communication controller</string>
 				<key>model</key>
-				<string>Cannon Lake PCH HECI Controller</string>
+				<string>Coffee Lake HECI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x17,0x0)</key>
 			<dict>
@@ -242,7 +242,7 @@
 				<key>device_type</key>
 				<string>SATA controller</string>
 				<key>model</key>
-				<string>Cannon Lake Mobile PCH SATA AHCI Controller</string>
+				<string>Coffee Lake Mobile SATA AHCI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1D,0x6)/Pci(0x0,0x0)</key>
 			<dict>
@@ -251,20 +251,16 @@
 				<key>device_type</key>
 				<string>Ethernet controller</string>
 				<key>model</key>
-				<string>RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
+				<string>Realtek 8111/8168/8411 PCI Express Gigabit Ethernet Controller</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x7)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1F,0x0)</key>
 			<dict>
 				<key>AAPL,slot-name</key>
-				<string>WLAN</string>
+				<string>Internal@0,31,0</string>
 				<key>device_type</key>
-				<string>Airport Extreme</string>
+				<string>ISA bridge</string>
 				<key>model</key>
-				<string>BCM43XX 802.11ac Wireless Network Adapter</string>
-				<key>name</key>
-				<string>Airport</string>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
+				<string>Coffee Lake HM470 Chipset LPC/eSPI Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x3)</key>
 			<dict>
@@ -275,7 +271,7 @@
 				<key>layout-id</key>
 				<data>HAAAAA==</data>
 				<key>model</key>
-				<string>Cannon Lake PCH cAVS</string>
+				<string>Realtek ALC294</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1F,0x4)</key>
 			<dict>
@@ -284,29 +280,21 @@
 				<key>device_type</key>
 				<string>SMBus</string>
 				<key>model</key>
-				<string>Cannon Lake PCH SMBus Controller</string>
+				<string>Coffee Lake SMBus Controller</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x2,0x0)</key>
 			<dict>
 				<key>AAPL,ig-platform-id</key>
-				<data>AACbPg==</data>
+				<data>CQClPg==</data>
 				<key>AAPL,slot-name</key>
 				<string>Internal@0,2,0</string>
 				<key>device_type</key>
 				<string>VGA compatible controller</string>
-				<key>disable-external-gpu</key>
-				<data>AQAAAA==</data>
 				<key>model</key>
 				<string>Intel UHD Graphics 630</string>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1D,0x0)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1D,0x7)/Pci(0x0,0x0)</key>
 			<dict>
-				<key>AAPL,slot-name</key>
-				<string>Internal@0,29,0/0,0</string>
-				<key>device_type</key>
-				<string>Non-Volatile memory controller</string>
-				<key>model</key>
-				<string>???</string>
 				<key>pci-aspm-default</key>
 				<integer>0</integer>
 			</dict>
@@ -343,22 +331,6 @@
 				<true/>
 				<key>ExecutablePath</key>
 				<string>Contents/MacOS/AppleALC</string>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>PlistPath</key>
-				<string>Contents/Info.plist</string>
-			</dict>
-			<dict>
-				<key>BundlePath</key>
-				<string>AirportBrcmFixup.kext</string>
-				<key>Comment</key>
-				<string>Wifi Driver</string>
-				<key>Enabled</key>
-				<false/>
-				<key>ExecutablePath</key>
-				<string>Contents/MacOS/AirportBrcmFixup</string>
 				<key>MaxKernel</key>
 				<string></string>
 				<key>MinKernel</key>
@@ -578,7 +550,7 @@
 				<key>BundlePath</key>
 				<string>VoodooInput.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Advanced Touchpad Extension</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -594,7 +566,7 @@
 				<key>BundlePath</key>
 				<string>CPUFriend.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Power Management</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -610,7 +582,7 @@
 				<key>BundlePath</key>
 				<string>CPUFriendDataProvider.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Power Management Data</string>
 				<key>Enabled</key>
 				<true/>
 				<key>ExecutablePath</key>
@@ -624,9 +596,73 @@
 			</dict>
 			<dict>
 				<key>BundlePath</key>
+				<string>itlwm.kext</string>
+				<key>Comment</key>
+				<string>Intel Wireless</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/itlwm</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>IntelBluetoothFirmware.kext</string>
+				<key>Comment</key>
+				<string>Intel Bluetooth</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/IntelBluetoothFirmware</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>IntelBluetoothInjector.kext</string>
+				<key>Comment</key>
+				<string>Intel Bluetooth</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string></string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Comment</key>
+				<string>Broadcom Wireless</string>
+				<key>Enabled</key>
+				<false/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>MaxKernel</key>
+				<string></string>
+				<key>MinKernel</key>
+				<string></string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+			<dict>
+				<key>BundlePath</key>
 				<string>BrcmBluetoothInjector.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Broadcom Bluetooth</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -642,7 +678,7 @@
 				<key>BundlePath</key>
 				<string>BrcmFirmwareData.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Broadcom Bluetooth</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -658,7 +694,7 @@
 				<key>BundlePath</key>
 				<string>BrcmPatchRAM3.kext</string>
 				<key>Comment</key>
-				<string></string>
+				<string>Broadcom Bluetooth</string>
 				<key>Enabled</key>
 				<false/>
 				<key>ExecutablePath</key>
@@ -681,120 +717,7 @@
 			<data></data>
 		</dict>
 		<key>Patch</key>
-		<array>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>NVME Fix</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>gLtxAgAAAHRN</data>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IONVMeFamily</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>DwtxAgAAAHRN</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>Enable TRIM for SSD</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>AEFQUExFIFNTRAA=</data>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IOAHCIBlockStorage</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>AAAAAAAAAAAAAAA=</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>NVME Fix</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>gL9xAgAAAA==</data>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IONVMeFamily</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>DwtxAgAAAA==</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-			<dict>
-				<key>Base</key>
-				<string></string>
-				<key>Comment</key>
-				<string>NVME Fix</string>
-				<key>Count</key>
-				<integer>0</integer>
-				<key>Enabled</key>
-				<false/>
-				<key>Find</key>
-				<data>gLtxAgAAAHRN</data>
-				<key>Identifier</key>
-				<string>com.apple.iokit.IONVMeFamily</string>
-				<key>Limit</key>
-				<integer>0</integer>
-				<key>Mask</key>
-				<data></data>
-				<key>MaxKernel</key>
-				<string></string>
-				<key>MinKernel</key>
-				<string></string>
-				<key>Replace</key>
-				<data>DwtxAgAAAHRN</data>
-				<key>ReplaceMask</key>
-				<data></data>
-				<key>Skip</key>
-				<integer>0</integer>
-			</dict>
-		</array>
+		<array/>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
@@ -999,7 +922,7 @@
 			<key>7C436110-AB2A-4BBB-A880-FE41995C9F82</key>
 			<dict>
 				<key>boot-args</key>
-				<string>-wegnoegpu -igfxnohdmi disable-hdmi-patches</string>
+				<string>-wegnoegpu vsmcgen=1</string>
 				<key>csr-active-config</key>
 				<data>5wMAAA==</data>
 			</dict>

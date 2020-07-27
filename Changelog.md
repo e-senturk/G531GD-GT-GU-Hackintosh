@@ -1,5 +1,10 @@
 G531GT -Hackintosh Opencore-Clover
 ====================
+#### v1.6.1
+- Support for Bigsur Beta 3 [ONLY OPENCORE] (Needs NVRam reset)
+- Fixed Virtual Smc UI thanks to serdeliuk
+- Added IntelWifi Support thanks to zxystd
+
 #### v1.6.0
 - Initial BigSur support (Only with OpenCore)
 - All kexts are compatible with BigSur
