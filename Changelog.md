@@ -1,5 +1,8 @@
 G531GT -Hackintosh Opencore-Clover
 ====================
+#### v1.6.2
+- Updated Opencore and Kexts to last release version
+
 #### v1.6.1
 - Support for Bigsur Beta 3 [ONLY OPENCORE] (Needs NVRam reset)
 - Fixed VirtualBiosMods UI thanks to serdeliuk
