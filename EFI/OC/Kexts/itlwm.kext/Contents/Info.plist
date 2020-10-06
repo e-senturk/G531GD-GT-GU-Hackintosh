@@ -17,13 +17,13 @@
 	<key>CFBundlePackageType</key>
 	<string>KEXT</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.1.0</string>
 	<key>CFBundleSupportedPlatforms</key>
 	<array>
 		<string>MacOSX</string>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.1.0</string>
 	<key>DTCompiler</key>
 	<string>com.apple.compilers.llvm.clang.1_0</string>
 	<key>DTPlatformBuild</key>
@@ -31,9 +31,9 @@
 	<key>DTPlatformVersion</key>
 	<string>GM</string>
 	<key>DTSDKBuild</key>
-	<string>19G68</string>
+	<string>16C58</string>
 	<key>DTSDKName</key>
-	<string>macosx10.15</string>
+	<string>macosx10.12</string>
 	<key>DTXcode</key>
 	<string>1160</string>
 	<key>DTXcodeBuild</key>
@@ -61,16 +61,16 @@
 				<key>WiFi_1</key>
 				<dict>
 					<key>password</key>
-					<string>wifi@4321</string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
-					<string>Itachi</string>
+					<string>ssdt</string>
 				</dict>
 				<key>WiFi_2</key>
 				<dict>
 					<key>password</key>
-					<string>1234s4321</string>
+					<string>zxyssdt112233</string>
 					<key>ssid</key>
-					<string>sarosh net</string>
+					<string>ssdt_5G</string>
 				</dict>
 				<key>WiFi_3</key>
 				<dict>
@@ -110,5 +110,7 @@
 	</dict>
 	<key>OSBundleRequired</key>
 	<string>Network-Root</string>
+	<key>XCBUILD</key>
+	<string>1.1.0</string>
 </dict>
 </plist>
