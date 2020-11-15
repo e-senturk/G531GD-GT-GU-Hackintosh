@@ -1,5 +1,6 @@
 # G531GT-Hackintosh
 # Important Notes
+## Please select the correct configuration and rename it as config.plist and replace it with the one in the OC folder.
 ## Please don't forget to type in terminal: sudo kextcache -i / command after installation. It might be required for some drivers.
 ## Please don't forget to disable boot logo sound otherwise your speaker won't work.
 ## Please edit your PlatformInfo configuration with OpenCoreConfigurator.
