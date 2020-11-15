@@ -1,5 +1,19 @@
 G531GT -Hackintosh Opencore-Clover
 ====================
+#### v1.8
+- Added Full Support for BigSur
+- Added IntelWireless and Bluetooth Support
+- Added IntelWireless Backward Compatibility
+- Fixed SecureBoot issues in Apple
+- No more Clover support :( I don't have time
+- Fixed minor bios bug in AsusBios (No more DSDT errors)
+- Updated everything
+- Added 3 config file for proper usage.
+- And many more...
+
+#### v1.7
+- A pre release version for BigSur Beta's
+
 #### v1.6.2
 - Updated Opencore and Kexts to last release version
 
