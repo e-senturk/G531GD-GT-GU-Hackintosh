@@ -6,8 +6,6 @@
 ## Please edit your PlatformInfo configuration with OpenCoreConfigurator.
 
 # Apps to install for better experiance
-## HeliosWireless = Wireless utility for Intel Wifi
-    https://github.com/OpenIntelWireless/HeliPort
 ## RogHID = Enables brightness and keyboard backlight keys.
     https://github.com/black-dragon74/ROG-HID
 ## RogSwitch = Menu bar keyboard backlight color controller
