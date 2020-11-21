@@ -12,6 +12,8 @@
     https://github.com/black-dragon74/ROGSwitch
 ## macAura = Advanced keyboard backlight color controller
     https://github.com/serdeliuk/macAura
+## HeliPort: Intel Wireless App use it only with iwlwm config
+    https://github.com/OpenIntelWireless/HeliPort
 
 ## Features:
 - Supports Mojave, Catalina and BigSur
