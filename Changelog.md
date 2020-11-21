@@ -1,5 +1,9 @@
 G531GT -Hackintosh Opencore-Clover
 ====================
+#### v1.8.1
+- Minor Improvements in Config's.
+- Disabled Linux entry by default
+
 #### v1.8
 - Added Full Support for BigSur
 - Added IntelWireless and Bluetooth Support
@@ -8,7 +12,7 @@ G531GT -Hackintosh Opencore-Clover
 - No more Clover support :( I don't have time
 - Fixed minor bios bug in AsusBios (No more DSDT errors)
 - Updated everything
-- Added 3 config file for proper usage.
+- Added different config file configurations for proper usage.
 - And many more...
 
 #### v1.7
