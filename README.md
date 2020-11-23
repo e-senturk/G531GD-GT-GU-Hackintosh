@@ -63,6 +63,11 @@ Easy fix: Just select reset NVRAM option in opencore.
 - Q-) I am getting kernel panic it says ionvme error what can I do?
 - A-) Your nvme ssd is most likely not supported by apple you need to replace it or buy a sata ssd and enable SSDT_NVMe-Pcc.aml in config.plist
 
+- Q-) My keyboard backlight can't be controlled with any app what can I do?
+- A-) Enable ALS0.aml from config.plist/ACPI section.
+
 - Q-) I have bug kp error what can I do? 
 - A-) Attach a debug and detailed information about bug. Without information I can't fix
 anything.
+
+
