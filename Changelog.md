@@ -1,8 +1,8 @@
 G531GD-GT-GU -Hackintosh Opencore
 ====================
 #### v1.8.3
-- Only Supports for intel wifi only supports BigSur
-- Works all configuration in Broadcom
+- For intel wifi only supports BigSur(Use older versions or modify config yourself)
+- Still works in all OSX version with Broadcom
 - Added G531GU and GD support
 - Updated config for new OpenCore release and updated kexts
 - Boosted boot speed
