@@ -1,6 +1,6 @@
-# G531GT-Hackintosh
+# G531GD-GT-GU-Hackintosh
 # Important Notes
-## Please select the correct configuration and rename it as config.plist and replace it with the one in the OC folder.
+## Select best configuration for your system and use that config file into EFI/OC folder -- Example: EFI/OC/config.plist
 ## Please don't forget to type in terminal: sudo kextcache -i / command after installation. It might be required for some drivers.
 ## Please don't forget to disable boot logo sound otherwise your speaker won't work.
 ## Please edit your PlatformInfo configuration with OpenCoreConfigurator.
@@ -37,7 +37,8 @@
 # Installation:
 ## OPENCORE
 - First read opencore installation docs for more info (https://github.com/acidanthera/OpenCorePkg).
-- Select best configuration for your system and use that config file by renaming it config.plist 
+- Select best configuration for your system and use that config file into EFI/OC folder 
+Example: EFI/OC/config.plist
 - Edit your device SMBIOS info as MacbookPro 15.1 with your own values.(You might want to use OpenCore Configurator).
 - If you want to install it only single drive install OS X first then Windows after all installation complete.
 - Copy efi folder to your drive and replace boot folder. Move windows folder into OC folder. Then use bless override

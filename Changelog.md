@@ -1,10 +1,22 @@
-G531GT -Hackintosh Opencore-Clover
+G531GD-GT-GU -Hackintosh Opencore
 ====================
+#### v1.8.3
+- Only Supports for intel wifi only supports BigSur
+- Works all configuration in Broadcom
+- Added G531GU and GD support
+- Updated config for new OpenCore release and updated kexts
+- Boosted boot speed
+- Added new Background
+
+#### v1.8.2
+- Fixed brightness slider bug in Big Sur
+- Minor improvements in the touchpad
+
 #### v1.8.1
 - Minor Improvements in Config's.
 - Disabled Linux entry by default
 
-#### v1.8
+#### v1.8.0
 - Added Full Support for BigSur
 - Added IntelWireless and Bluetooth Support
 - Added IntelWireless Backward Compatibility
@@ -15,7 +27,7 @@ G531GT -Hackintosh Opencore-Clover
 - Added different config file configurations for proper usage.
 - And many more...
 
-#### v1.7
+#### v1.7.0
 - A pre release version for BigSur Beta's
 
 #### v1.6.2
