@@ -1248,7 +1248,7 @@
 		<array>
 			<string>ApfsDriverLoader.efi</string>
 			<string>OpenCanopy.efi</string>
-			<string>HfsPlus.efi</string>
+			<string>OpenHfsPlus.efi</string>
 			<string>HiiDatabase.efi</string>
 			<string>NvmExpressDxe.efi</string>
 			<string>XhciDxe.efi</string>
